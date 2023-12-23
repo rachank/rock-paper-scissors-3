@@ -1,110 +1,157 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+!
+# Rock Paper Scissors Game
 
-Welcome USER_NAME,
+This is a rock paper scissors game. It is designed to be used by a single player to play against the computer. The user can choose one of three image choices of rock, paper or scissors and try to beat the computer which chooses at random. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The rules of the game are the same as the original version. Rock beats scissors, scissors beats paper, and paper beats rock.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This game is targeted for people who have an interest in gaming. The additional graphics also incorrporate some more interest and fun into the game. The game lists the rules and instructions at the beginning with a few small historical facts on the origins of the game for those who might be interested.
 
-## Gitpod Reminders
+[View the live project here.](https://rachank.github.io/rock-paper-scissors-2/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Screen shot of the game tested on Am I Responsive website](readme-images/am-i-responsive-image.png)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+### Design Features
 
-Another blue button should appear to click: _Open Browser_.
+- The Title of the game is centered and in bold to stand out. 
+<div align="center">
+<img  src="readme-images/rockpaperscissors-title.jpg?raw=true" alt="rock paper scissors title">
+</div>
+<br>
+- Below the title is a small logo utilizing the combination of the rock, paper and scissors game images with some fun expressions.
+<br>
+<div align="center">
+<img  src="assets/images/images.logo/rock-paper-scissors-logo-small.jpg?raw=true" alt="rock paper scissors logo">
+</div>
+<br>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- A few brief historical facts are included on the game of Rock Paper Scissors for further interest.
+<br>
+<div align="center">
+<img  src="readme-images/historical-facts-rockpaperscissors.jpg?raw=true" alt="rock paper scissors historical facts">
+</div>
+<br>
 
-A blue button should appear to click: _Make Public_,
+- Following the mini history lesson are the rules of the game.
+<br>
+<div align="center">
+<img  src="readme-images/rockpaperscissors-instructions.jpg?raw=true" alt="rock paper scissors rules">
+</div>
 
-Another blue button should appear to click: _Open Browser_.
+<br>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- The site is in black and white to better suit and emphasize the simplicity of the style of the font and images it contains.
 
-To log into the Heroku toolbelt CLI:
+- Google Fonts was used to import the font family East Sea Dokdo, which was chosen and used throughout the entire site with Sans Serif as the backup font. East Sea Dokdo compliments the style of the images in its' coarse texture and bold, rough design.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- To increase the enjoyment of the game, some images were designed to use as clickable images for rock, paper, and scissors with some lively facial expressions.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- Start images of rock, paper, and scissors
 
-------
+<div align="center">
+<img alt="rock start image" src="assets/images/images-start/rock-start.jpg">
+<img alt="paper start image" src="assets/images/images-start/paper-start.jpg">
+<img alt="scissors start image" src="assets/images/images-start/scissors-start.jpg">
+</div>
 
-## Release History
+### Features Still to Implement
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- Include a game counter with a start again button.
+- Include an input request for the player's name and display it in the score board to personlize the game.
+- Include improved media queries to format the game to look more compact and fit better on each screen size.
+- Include some simple animation of the logo and on the images in the result modal to further enhance the entertainment value of the game.
+- Include mulitple random images for the winner and loser in a pop up modal to better display the outcome of each game and to increase the player's amusement.
 
-**September 20 2023:** Update Python version to 3.9.17.
+<br>
+- Some of the Loser Image examples to add:
+<br>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<div align="center">
+<img alt="dazed paper image" src="assets/images/images-lose/paper-lose-dazed.jpg">
+<img alt="sad paper image" src="assets/images/images-lose/paper-lose-sad.jpg">
+<img alt="grumpy rock image" src="assets/images/images-lose/rock-lose-grumpy.jpg">
+<img alt="surprised rock image" src="assets/images/images-lose/rock-lose-surprise.jpg">
+<img alt="sad scissors image" src="assets/images/images-lose/scissors-lose-sad.jpg">
+<img alt="smiling scissors image" src="assets/images/images-lose/scissors-lose-surprise.jpg">
+</div>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+<br>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- Some of the Winner Image examples to add:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![smiling paper](assets/images/images-win/paper-win-smile.jpg)
+![teasing paper](assets/images/images-win/paper-win-tease.jpg)
+![laughing rock](assets/images/images-win/rock-win-laugh.jpg)
+![winking rock](assets/images/images-win/rock-win-wink.jpg)
+![laughing scissors](assets/images/images-win/scissors-win-laugh.jpg)
+![smiling scissors](assets/images/images-win/scissors-win-smile.jpg)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Technologies Used
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### Languages Used
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- HTML5
+- CSS3
+- JavaScript
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### Programs Used
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- [Adobe Fresco](https://www.adobe.com/products/fresco.html): used to create original rock, paper, and scissors images.
+- [Google Fonts](https://fonts.google.com/): used to import font family 'East Sea Dokdo'.
+- [Am I Responsive](https://ui.dev/amiresponsive): used to check responsiveness.
+- [Gitpod](https://www.gitpod.io/): used to develope the project's code.
+- [GitHub](https://github.com/): used to store the project's code 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Testing
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### Validator Testing
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Deployment
 
-**How will this affect me?**
+This site was deployed to GitHub pages and the steps to deploy are as follows:
+- In the GitHub respository navigate to the settings tab in the top right hand corner.
+- In the 'Code and Automation' section of the sidebar, click 'Pages'.
+- To see the published site, under 'GitHub Pages', click on 'Visit site'.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+[View the live project here.](https://rachank.github.io/rock-paper-scissors-2/)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+### Credits
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- All content and images were produced by the developer.
 
-**Can I opt out?**
+- [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors) provided historical facts on the game of rock-paper-scissors
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Multiple websites and tutorials on these sites were referred to for learning purposes, review of HTML, CSS, and Javascript:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- [Web Dev Simplified - both blog and YouTube channel](https://blog.webdevsimplified.com/)
 
-**Anything more?**
+- [W3schools](https://www.w3schools.com/)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- [Quackit](https://www.quackit.com/)
 
----
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
-Happy coding!
+- [w3resource](https://www.w3resource.com/)
+
+- [GeeksforGeeks](https://www.geeksforgeeks.org/)
+
+- [Stack Overflow](https://stackoverflow.com/)
+
+To learn how to use Adobe Fresco:
+
+- [Adobe Fresco Tutorials](https://creativecloud.adobe.com/de/learn/app/fresco)
+
+- Various Channels relating to Adobe Fresco on [YouTube](https://www.youtube.com/)
+
+#### Acknowledgments
+
+Many, many thanks to my mentor Brian Macharia who was very patient with my questions, followed up with further information,  and gave me wonderful advice on how to plan and execute this project. He also recommended many ideas and resources to assist with coding, design, and testing. 
