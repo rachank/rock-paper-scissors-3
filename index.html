@@ -20,21 +20,25 @@
 <body>
     <!--Game Navigation-->
     <header>
-        <div class="header-container" 
-        <h1 id="heading">Rock Paper Scissors Game</h1>
-       
-        <img id="logo" src="assets/images/images-logo/rock-paper-scissors-logo-small.jpg"
-
-            alt="logo of rock paper and scissors"></div>
-        <nav class="navheadings">
-            <a href="./index.html">How to Play</a>
-            <a href="./playgame.html">Play Game</a>
+        <nav class="navigationbar">
+            <div>
+                <h1 id="heading">Rock Paper Scissors Game</h1> 
+            </div>
+                <ul>
+                    <li><button class="navbutton" onclick="restartGame()">Restart Game</button></li>
+                    <li><img id="logo" src="assets/images/images-logo/rock-paper-scissors-logo-small.jpg"
+                        alt="logo of cartoon rock paper and scissors"></div></li>
+                    <li><button class="navbutton" onclick="openModal()">How to Play</button></li>
+                </ul>
         </nav>
-    
-        </div> 
-        
-           
     </header>
+
+
+        <!-- OLD CODE
+            <a href="./index.html">How to Play</a>
+            <a href="./playgame.html">Play Game</a>-->
+           
+   
 
     <!-- OLD CODE <div><img id="logo" src="assets/images/images.logo/rock-paper-scissors-logo-small.jpg"
             alt="logo of rock paper and scissors"></div>
