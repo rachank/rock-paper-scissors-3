@@ -6,7 +6,7 @@ let compPick;
 //Variable to get Modal and close Modal
 var modal = document.getElementById("howtomodal");
 var span = document.getElementsByClassName("closemodal")[0];
-var button = document.getElementById("playButton")
+var bttn = document.getElementById("playButton")
 
 //Variables to track scores
 let playerScore = 0;
@@ -29,6 +29,11 @@ window.onclick = function(event) {
     }
 }
 
+// Close Modal when User Clicks on Play Game Button
+bttn.onclick = function() {
+    modal.style.display = "none";
+    
+}
 
 
 
