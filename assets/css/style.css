@@ -1,32 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 
+* {
+margin: 0;
+padding: 0;
+border: none;
+box-sizing: border-box;
+margin: 0;
+overflow-x: hidden;
+/*position: relative;*/
+
+}
 body {
     font-family: 'East Sea Dokdo', sans-serif;
     text-align: center;
-    box-sizing: border-box;
-    margin: 0;
-    position: relative;
+    
 }
 
 /* navigation bar style*/
 
-nav li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 15px;
+.navigationbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navigationbar {}
+/* navigation bar items style*/
+.navigationitems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 
-/* style header & logo*/
-#heading {
+/* style heading */
+ h1 {
     font-size: 6em;
-    margin-block-end: 0.1e
+    margin: 0;
 }
 
 /* style buttons in navigation*/
-.navbutton {}
+.navbutton {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: white;
+    background: black;
+    font-size: 30px;
+    padding: 12px 15px;
+    text-align: center;
+    font-family: 'East Sea Dokdo', sans-serif;
+}
 
 
 
@@ -41,21 +67,16 @@ nav li {
     animation: tilt-shake 0.5s ease-in-out 6 alternate forwards, rotate360 0.7s ease-in-out 2s forwards;
 }
 
-/*
-#logo:hover {
-    cursor: pointer;
-    animation: tilt-shake 0.50s ease-in-out;
-}*/
 
 @keyframes tilt-shake {
-   0% {
+    0% {
         transform: translate(0, 0) rotate(0deg);
     }
 
     25% {
         transform: translate(6px, 6px) rotate(5deg);
     }
- 
+
     50% {
         transform: translate(0, 0) rotate(0eg);
     }
@@ -65,14 +86,11 @@ nav li {
     }
 }
 
-@keyframes rotate360 { 
-        100% {
-            transform: translate(0, 0) rotate(360deg);
-        }
+@keyframes rotate360 {
+    100% {
+        transform: translate(0, 0) rotate(360deg);
     }
-    
-
-
+}
 
 /* How To Play heading and paragraph style */
 
@@ -190,6 +208,7 @@ nav li {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
 
+
     /* Adjust font sizes for smaller screens */
     #heading {
         font-size: 4em;
@@ -248,7 +267,12 @@ nav li {
 }
 
 /* Media query for small phones (max-width: 320px) */
-@media (max-width: 320px) {
+@media (max-width: 425px) {
+
+    /* Adjust Flex containers for small phones*/
+    .navigationbar {
+        flex-direction: column;
+    }
 
     /* Adjust font sizes and margins for small phones */
     #heading {
