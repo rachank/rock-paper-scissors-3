@@ -53,7 +53,10 @@ body {
     text-align: center;
     font-family: 'East Sea Dokdo', sans-serif;
 }
-
+.navbutton:hover {
+    background-color: white;
+    color: black;
+}
 
 
 /* Animation on Logo image*/
