@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 
 * {
-margin: 0;
-padding: 0;
-border: none;
-box-sizing: border-box;
-margin: 0;
-overflow-x: hidden;
-/*position: relative;*/
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    /*position: relative;*/
 
 }
+
 body {
     font-family: 'East Sea Dokdo', sans-serif;
     text-align: center;
-    
+
 }
 
 /* navigation bar style*/
@@ -35,7 +36,7 @@ body {
 
 
 /* style heading */
- h1 {
+h1 {
     font-size: 6em;
     margin: 0;
 }
@@ -54,6 +55,7 @@ body {
     text-align: center;
     font-family: 'East Sea Dokdo', sans-serif;
 }
+
 .navbutton:hover {
     background-color: white;
     color: black;
@@ -115,7 +117,7 @@ body {
     max-width: 75%;
 }
 
-/*Style Modal*/
+/*Style How to Play Modal*/
 
 .modal {
     display: none;
@@ -135,7 +137,7 @@ body {
     padding: 10px;
     border: 3px solid black;
     width: 70%;
-    max-width: 600px ;
+    max-width: 600px;
 }
 
 .closemodal {
@@ -143,14 +145,14 @@ body {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    font-family: 'East Sea Dokdo', sans-serif;
 }
 
-.closemodal:hover, .closemodal:focus {
+.closemodal:hover,
+.closemodal:focus {
     color: black;
     text-decoration: none;
-    font-family: 'East Sea Dokdo', sans-serif;
     cursor: pointer;
-
 }
 
 

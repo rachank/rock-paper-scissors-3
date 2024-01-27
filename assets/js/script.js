@@ -3,9 +3,34 @@
 let startImages = document.querySelectorAll(".startimage");
 let compPick;
 
+//Variable to get Modal and close Modal
+var modal = document.getElementById("howtomodal");
+var span = document.getElementsByClassName("closemodal")[0];
+var button = document.getElementById("playButton")
+
 //Variables to track scores
 let playerScore = 0;
 let computerScore = 0;
+
+//Open Modal on Page load
+window.onload = function() {
+    modal.style.display = "block";
+}
+
+// Close Modal on (x) Click
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Close Modal when User Clicks outside of Modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
 
 //Update score display
 function updateScore() {
