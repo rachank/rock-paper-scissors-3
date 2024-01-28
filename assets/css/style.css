@@ -158,6 +158,27 @@ h1 {
     text-decoration: none;
     cursor: pointer;
 }
+ /* Style Play Game button on Modal*/
+#playgame {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 4px;
+    color: white;
+    background: black;
+    font-size: 30px;
+    padding: 12px 15px;
+    text-align: center;
+    font-family: 'East Sea Dokdo', sans-serif;
+}
+
+#playgame:hover {
+    background-color: white;
+    color: black;
+}
+
+
 
 
 /* style score board area */
